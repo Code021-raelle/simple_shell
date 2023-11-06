@@ -13,7 +13,7 @@ char **separator(char *input)
 	char **commands;
 	char *command;
 	int i;
-	int buffsize = BUFFSIZE;
+	int buffsize = BUFSIZE;
 
 	if (input[0] == ' ' && input[_strlen(input)] == ' ')
 		exit(0);

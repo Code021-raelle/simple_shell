@@ -10,7 +10,7 @@ void create_environ(char **environ)
 	int i;
 
 	for (i = 0; environ[i]; i++)
-		environ[i] = _strdup(environ[i]);
+		environ[i] = strdup(environ[i]);
 	environ[i] = NULL;
 }
 

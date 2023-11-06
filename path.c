@@ -19,7 +19,7 @@ int path_cmd(char **cmd)
 		cmd_path = build(*cmd, value);
 		if (stat(cmd_path, &buf) == 0)
 		{
-			*cmd = _strdup(cmd_path);
+			*cmd = strdup(cmd_path);
 			free(cmd_path);
 			free(path);
 			return (0);
@@ -89,7 +89,7 @@ char *_getenv(char *name)
 			}
 
 			j = 0;
-			for (K = name_len + 1; environ[i][k]; k++, j++)
+			for (k = name_len + 1; environ[i][k]; k++, j++)
 			{
 				value[j] = environ[i][k];
 			}
