@@ -79,7 +79,7 @@ void error_file(char **argv, int c);
 
 /* ENVIRONMENT HANDLERS */
 extern char **environ;
-void create_envi(char **envi);
+void create_environ(char **environ);
 void free_env(char **env);
 
 /* PRINTING FUNCTIONS */
