@@ -122,8 +122,8 @@ int history_dis(__attribute__((unused))char **c,
 /***** BUILT-IN COMMANDS STRUCT *****/
 
 /**
- * struct _builtin - defines a struct that contains built-in commands with their
- *                   respective implementation functions
+ * struct _builtin - defines a struct that contains built-in commands with
+ *                   their respective implementation functions
  * @command: built-in command
  * @function: pointer to custom functions that have similar
  *            functionalities as the built-in commands
