@@ -94,17 +94,17 @@ int path_cmd(char **cmd);
 char *build(char *token, char *value);
 char *_getenv(char *name);
 
-/* HELP HANDLERS */
+/* ASSIST HANDLERS */
 
-void help_env(void);
-void help_setenv(void);
-void help_unsetenv(void);
-void help_history(void);
-void help_all(void);
-void help_alias(void);
-void help_cd(void);
-void help_exit(void);
-void help_help(void);
+void assist_env(void);
+void assist_setenv(void);
+void assist_unsetenv(void);
+void assist_history(void);
+void assist_all(void);
+void assist_alias(void);
+void assist_cd(void);
+void assist_exit(void);
+void assist_help(void);
 int display_help(char **cmd, __attribute__((unused))int st);
 
 /* BUILTIN COMMAND HANDLERS AND EXECUTE */
