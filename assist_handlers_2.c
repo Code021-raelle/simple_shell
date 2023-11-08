@@ -63,7 +63,7 @@ int display_help(char **cmd, __attribute__((unused))int st)
 	else if (_strcmp(cmd[1], "unsetenv") == 0)
 		assist_unsetenv();
 	else if (_strcmp(cmd[1], "help") == 0)
-		help_help();
+		help_env();
 	return (0);
 }
 

@@ -52,7 +52,7 @@ int handle_builtin(char **cmd, int st)
 	};
 	int i = 0;
 
-	while ((builtin_in + i)->command)
+	while ((built_in + i)->command)
 	{
 		if (_strcmp(cmd[0], (built_in + i)->command) == 0)
 		{
