@@ -61,8 +61,8 @@ char **separator(char *input);
 
 /* FILE ARGUMENT HANDLER FUNCTIONS */
 
-void read_file(char *file, char **argv);
-void treat_file(char *line, int count, FILE *fp, char **argv);
+void rd_file(char *file, char **argv);
+void parse_file(char *line, int count, FILE *fp, char **argv);
 void exit_bul_for_file(char **cmd, char *line, FILE *fd);
 
 /* PARSED ARGUMENT HANDLER FUNCTIONS */
