@@ -13,7 +13,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 	int count = 0, i, condition = 1, stat = 0;
 
 	if (argv[1] != NULL)
-		read_file(argv[1], argv);
+		rd_file(argv[1], argv);
 	signal(SIGINT, signal_to_handle);
 	while (condition)
 	{
