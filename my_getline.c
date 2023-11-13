@@ -67,7 +67,7 @@ char *enter(char *string)
 
 char *space(char *str)
 {
-	int i, j, = 0;
+	int i, j = 0;
 	char *buff;
 
 	buff = malloc(sizeof(char) * (_strlen(str) + 1));
