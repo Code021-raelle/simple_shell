@@ -27,7 +27,7 @@ char *my_getline()
 		}
 		buffer[i] = c;
 		if (buffer[0] == '\n')
-			return (enter(buffer));
+			return (enter_key(buffer));
 		if (i >= buffsize)
 		{
 			buffer = realloc(buffer, (buffsize + 2));
@@ -39,33 +39,33 @@ char *my_getline()
 		}
 	}
 	buffer[i] = '\0';
-	buf = space(buffer);
+	buf = my_space(buffer);
 	free(buffer);
-	hashtag_handler(buf);
+	mytag_handler(buf);
 	return (buf);
 }
 
 /**
- * enter - Handles newline character input
+ * enter_key - Handles newline character input
  * @string: string to be handled
  *
  * Return: Empty string
  */
 
-char *enter(char *string)
+char *enter_key(char *string)
 {
 	free(string);
 	return ("\0");
 }
 
 /**
- * space - Modifies any input string to remove whitespaces
+ * my_space - Modifies any input string to remove whitespaces
  * @str: input to modify
  *
  * Return: returns the modified string
  */
 
-char *space(char *str)
+char *my_space(char *str)
 {
 	int i, j = 0;
 	char *buff;
@@ -93,12 +93,12 @@ char *space(char *str)
 }
 
 /**
- * hashtag_handler - function that removes everything after '#'
+ * mytag_handler - function that removes everything after '#'
  * @buff: input buffer
  *
  * Return: nothing
  */
-void hashtag_handler(char *buff)
+void mytag_handler(char *buff)
 {
 	int i;
 
