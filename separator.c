@@ -27,11 +27,11 @@ char **separator(char *input)
 		return (NULL);
 	}
 
-	command = _strtok(input, ";&");
+	command = my_strtok(input, ";&");
 	for (i = 0; command; i++)
 	{
 		commands[i] = command;
-		command = _strtok(NULL, ";&");
+		command = my_strtok(NULL, ";&");
 	}
 	commands[i] = NULL;
 

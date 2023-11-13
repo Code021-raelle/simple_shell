@@ -67,7 +67,7 @@ void assist_cd(void)
 /**
  * assist_exit - Displays information on the shell by builtin command 'exit'
  */
-void help_exit(void)
+void assist_exit(void)
 {
 	char *msg = "exit: exit [STATUS]\n\tExits the shell.\n\n\tThe ";
 

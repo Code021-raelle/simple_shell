@@ -55,7 +55,7 @@ char *enter_key(char *string);
 void mytag_handler(char *buff);
 void prompt(void);
 unsigned int pass_delim(char c, const char *str);
-char *_strtok(char *str, const char *delim);
+char *my_strtok(char *str, const char *delim);
 int history(char *input);
 char **separator(char *input);
 
