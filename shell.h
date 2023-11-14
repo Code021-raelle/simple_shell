@@ -111,7 +111,7 @@ int display_help(char **cmd, __attribute__((unused))int st);
 
 int check_builtin(char **cmd);
 int handle_builtin(char **cmd, int st);
-void exit_builtin(char **cmd, char *input, char **argv, int c, int stat);
+void exit_bul(char **cmd, char *input, char **argv, int c, int stat);
 int change_dir(char **cmd, __attribute__((unused))int st);
 int dis_env(__attribute__((unused)) char **cmd,
 		__attribute__((unused)) int st);

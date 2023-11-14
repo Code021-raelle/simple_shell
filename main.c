@@ -31,6 +31,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 			if (_strcmp(cmd[0], "exit") == 0)
 			{
 				free(commands);
+				exit_bul(cmd, input, argv, count, stat);
 			}
 			else if (check_builtin(cmd) == 0)
 			{
