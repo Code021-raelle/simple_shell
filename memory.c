@@ -5,38 +5,38 @@
  * @ptr: pointer
  * @old_size: previous size of the pointer
  * @new_size: new size of the pointer
- * 
+ *
  * Return: pointer to reallocated memory
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-    void *result;
+	void *result;
 
-    if (new_size == old_size)
-	    return (ptr);
-    if (new_size == 0 && ptr)
-    {
-	    free(ptr);
-	    return (NULL);
-    }
-    result = malloc(new_size);
-    if (result == NULL)
-    {
-	    free(result);
-	    return (NULL);
-    }
-    if (ptr == NULL)
-    {
-	    fill_an_array(result, '\0', new_size);
-	    free(ptr);
-    }
-    else
-    {
-	    _memcpy(result, ptr, old_size);
-	    free(ptr);
-    }
-    return (result);
+	if (new_size == old_size)
+		return (ptr);
+	if (new_size == 0 && ptr)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	result = malloc(new_size);
+	if (result == NULL)
+	{
+		free(result);
+		return (NULL);
+	}
+	if (ptr == NULL)
+	{
+		fill_an_array(result, '\0', new_size);
+		free(ptr);
+	}
+	else
+	{
+		_memcpy(result, ptr, old_size);
+		free(ptr);
+	}
+	return (result);
 }
 
 /**
