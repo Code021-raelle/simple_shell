@@ -64,9 +64,3 @@ void signal_to_handle(int sig)
 	}
 }
 
-void free_all(char *cmd, char *input)
-{
-	free(cmd);
-	free(input);
-}
-
